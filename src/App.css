@@ -1,38 +1,92 @@
-.App {
-  text-align: center;
+.image-car {
+  width: 100vw; 
+  height: 100vh; 
+  object-fit: cover;
+  object-position: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.overlayMain {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%; 
+  background: linear-gradient(to right, rgba(223, 22, 22, 2), rgba(14, 93, 241, 0));
+  z-index: 1; 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.overlayMainVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  height:50vh;
+  width: 100%; 
+  background: linear-gradient(to top, rgba(223, 22, 22, 2), rgba(14, 93, 241, 0));
+  z-index: 1; 
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+
+.card-video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  opacity: 0;
+  object-fit: cover;
+  transition: opacity 0.6s ease;
+  z-index: 1;
+}
+
+.card:hover .card-video-overlay {
+  opacity: 1;
+  backdrop-filter: blur(10px);
+}
+
+.card-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* filter: blur(1px); */
+}
+
+.card-body {
+  position: relative;
+  z-index: 1;
+}
+
+.card:hover .card-title,
+.card:hover .card-text {
+  color: white; 
+}
+
+.headerCard:hover,
+.paragraphCard:hover {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+#particles canvas {
+  z-index: -1;
+  height: 50%;
+  width: 50%;
+  position: absolute;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.overlaySmallVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  height:100vh;
+  width: 100%;
+  background: linear-gradient(16deg, rgba(235, 11, 11, 0.8), rgba(46, 235, 72, 0));
+
+  /* background: linear-gradient(to top, rgba(123, 22, 22, 2), rgba(14, 93, 241, 0)); */
+  z-index: 1; 
+}
+
+.cardRadius {
+  border-radius: 0 !important;
 }
