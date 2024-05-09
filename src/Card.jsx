@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import industry from "./assets/industry.mp4";
+
 
 const Card = ({video, header, subheader, paragraph, subheader1, paragraph1}) => {
 
@@ -23,7 +23,7 @@ const Card = ({video, header, subheader, paragraph, subheader1, paragraph1}) => 
             Your browser does not support the video tag.
           </video>
         )}
-        {/* <div className="overlaySmallVideo"></div> */}
+       
       </div>
       <div className="card-body d-flex flex-column justify-content-center">
         <h4 className="headerCard" style={{ color: "#008F58", fontWeight: 600 }}>{header}</h4>

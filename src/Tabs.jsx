@@ -9,12 +9,7 @@ import play4 from "./lottieFiles/EmulLottie8.json";
 import play5 from "./lottieFiles/circuit9.json";
 import play6 from "./lottieFiles/EmulLottie1.json";
 
-import one from "./assets/1.png";
-import two from "./assets/2.png";
-import three from "./assets/3.png";
-import sm1 from "./assets/sm1.jpg";
-import sm3 from "./assets/sm3.png";
-import case2 from "./assets/case2.jpg";
+
 import { Icon } from "@iconify/react";
 import Card from "./Card";
 import middleware1 from "./assets/middleware1.mp4";
@@ -27,7 +22,7 @@ import middleware7 from "./assets/middleware7.mp4";
 import middleware8 from "./assets/middleware8.mp4";
 import middleware9 from "./assets/middleware9.mp4";
 import EmbeddedAi from "./EmbeddedAi";
-import { Button } from "bootstrap";
+
 
 export const Tabs = () => {
   const [isCardHovered, setIsCardHovered] = useState(false);
@@ -41,7 +36,7 @@ export const Tabs = () => {
   const [icon4, setIcon4] = useState("noto-v1:right-arrow");
 
 
-  <Icon icon="noto-v1:down-arrow" />
+  
   const onShowClick1 = () => {
     
   setShow1(!show1);
@@ -49,6 +44,7 @@ export const Tabs = () => {
   setIcon1(newIcon);
 
   };
+  
 
   const onShowClick2 = () => {
     setShow2(!show2);
@@ -303,8 +299,8 @@ export const Tabs = () => {
                   </li>
                 </ul>
                 <div className="tab-content mt-0 mt-md-5">
-                  <div className="tab-pane fade show active" id="tab3-1">
-                    <div className="row">
+                  <div className="tab-pane fade show active" id="tab3-1" style={{ height: 'auto', margin: 0, padding: 0 }}>
+                    <div className="row gx-lg-8 gx-xl-12 gy-10 mb-5 mb-md-5">
                       <div className="col-md-12 col-sm-12">
                         {/* <h5>
                           As an embedded firmware development company, we offer
@@ -362,14 +358,12 @@ export const Tabs = () => {
                       </div>
                       <div className="row">
                         <div className="col-md-6 col-sm-12">
-                          <h5>
+                        <p style={{ color:'#1268b3',fontWeight:'bold', fontSize:'1.65em'}}>
                             {" "}
-                            Our Embedded{" "}
-                            <span style={{ color: "#1268b3" }}>
-                              Firmware Development Services
-                            </span>
-                          </h5>
-                          <p>
+                            Our Embedded Firmware Development Services
+                           
+                          </p>
+                          <p style={{ color:'#008F58',fontWeight:'bold', fontSize:'1.25em'}}>
                             Firmware development services involve creating,
                             maintaining, and updating firmware — customised
                             software embedded in dedicated devices like consumer
@@ -423,16 +417,14 @@ export const Tabs = () => {
                           </ul>
                         </div>
                         <div className="col-md-6 col-sm-12">
-                          <h5>
-                            {" "}
-                            Tech stack Used in{" "}
-                            <span style={{ color: "#1268b3" }}>
-                              Firmware Development
-                            </span>
-                          </h5>
-                          <p>
+                        <p style={{ color:'#1268b3',fontWeight:'bold', fontSize:'1.65em'}}>
+                          
+                            Tech stack Used in Firmware Development
+                            
+                      </p>
+                      <p style={{ color:'#008F58',fontWeight:'bold', fontSize:'1.25em'}}>
                             We design both bare-metal and RTOS-based firmware
-                            products within the following technology stacks:
+                            within the following technology stacks:
                           </p>
                           <ul
                             className="icon-list bullet-bg bullet-soft-primary mb-5 two-columns"
@@ -468,13 +460,14 @@ export const Tabs = () => {
                               TCP/IP stacks: uIP, lwIP
                             </li>
                           </ul>
-                          <h5>
+                          <p style={{ color:'#008F58',fontWeight:'bold', fontSize:'1.25em'}}>
+
                             Whether you are looking for embedded solutions to
                             connect devices within an IoT system, remotely
                             control devices and equipment, or gather and process
                             sensor data, our embedded engineers can help. We
                             cover:
-                          </h5>
+                          </p>
                           <ul
                             className="icon-list bullet-bg bullet-soft-primary mb-5 two-columns"
                             style={{
@@ -511,7 +504,7 @@ export const Tabs = () => {
                   </div>
 
                   <div className="tab-pane fade" id="tab3-2">
-                    <p>
+                  <p style={{ color:'#1268b3',fontWeight:'bold', fontSize:'1.25em'}}>
                       Developing Middleware for embedded Services requires a
                       careful selection of technologies that balance
                       performance, resource constraints, and compatibility with
@@ -622,7 +615,7 @@ export const Tabs = () => {
 
                   <div className="tab-pane fade" id="tab3-3">
                     <div className="row gx-lg-8 gx-xl-12 gy-10 mb-5 mb-md-5 align-items-center">
-                      <h4>
+                    <p style={{ color:'#1268b3',fontWeight:'bold', fontSize:'1.25em'}}>
                         Embedded artificial intelligence (AI) services integrate
                         AI capabilities into embedded systems so devices can
                         perform intelligent functions and make decisions locally
@@ -631,27 +624,30 @@ export const Tabs = () => {
                         with problem analysis and execute technology scouting to
                         unlock new possibilities for efficiency, automation and
                         innovation as close to your data sources as you need.
-                      </h4>
+                      </p>
                       <EmbeddedAi />
                     </div>
                   </div>
 
                   <div className="tab-pane fade" id="tab3-4">
-                    <div className="row gx-lg-8 gx-xl-12 gy-10 mb-5 mb-md-5 align-items-center">
+                    <div className="row gx-lg-8 gx-xl-12 gy-10 mb-5 mb-md-5">
                       <div className="col-lg-6">
-                        <ul
-                          className="icon-list bullet-bg bullet-soft-primary two-columns"
-                          style={{ listStyleType: "none" }}
-                        >
-                          <h4>
+                      <p style={{ color:'#1268b3',fontWeight:'bold', fontSize:'1.25em'}}>
+
                             Human-Machine Interfaces (HMIs) in embedded services
                             require a combination of hardware and software
                             technologies to provide users with intuitive
                             interaction and feedback. Below are the range of
                             solutions and offerings to cater to the needs of
                             various industries and applications.
-                          </h4>
+                          </p>
+                        <ul
+                          className="icon-list bullet-bg bullet-soft-primary two-columns"
+                          style={{ listStyleType: "none"}}
+                        >
+                          <span  style={{ color:'#008F58',fontWeight:'bold', fontSize:'1.25em'}}>
                           Custom HMI Development:
+                          </span>
                           <li>
                             <span class="me-3">
                               <Icon icon="icon-park-outline:check-correct" />
@@ -670,7 +666,10 @@ export const Tabs = () => {
                           className="icon-list bullet-bg bullet-soft-primary two-columns"
                           style={{ listStyleType: "none" }}
                         >
+                                                    <span  style={{ color:'#008F58',fontWeight:'bold', fontSize:'1.25em'}}>
+
                           User Interface Design:
+                          </span>
                           <li>
                             <span class="me-3">
                               <Icon icon="icon-park-outline:check-correct" />
@@ -689,7 +688,10 @@ export const Tabs = () => {
                           className="icon-list bullet-bg bullet-soft-primary two-columns"
                           style={{ listStyleType: "none" }}
                         >
+  <span  style={{ color:'#008F58',fontWeight:'bold', fontSize:'1.25em'}}>
+
                           Touchscreen and Display Integration:
+                          </span>
                           <li>
                             <span class="me-3">
                               <Icon icon="icon-park-outline:check-correct" />
@@ -708,7 +710,10 @@ export const Tabs = () => {
                           className="icon-list bullet-bg bullet-soft-primary two-columns"
                           style={{ listStyleType: "none" }}
                         >
+                           <span  style={{ color:'#008F58',fontWeight:'bold', fontSize:'1.25em'}}>
+                         
                           Graphics Rendering and Animation:
+                          </span>
                           <li>
                             <span class="me-3">
                               <Icon icon="icon-park-outline:check-correct" />
@@ -727,7 +732,10 @@ export const Tabs = () => {
                           className="icon-list bullet-bg bullet-soft-primary two-columns"
                           style={{ listStyleType: "none" }}
                         >
+                                                    <span  style={{ color:'#008F58',fontWeight:'bold', fontSize:'1.25em'}}>
+
                           Multi-Platform Support:
+                          </span>
                           <li>
                             <span class="me-3">
                               <Icon icon="icon-park-outline:check-correct" />
@@ -746,7 +754,10 @@ export const Tabs = () => {
                           className="icon-list bullet-bg bullet-soft-primary two-columns"
                           style={{ listStyleType: "none" }}
                         >
+                                                    <span  style={{ color:'#008F58',fontWeight:'bold', fontSize:'1.25em'}}>
+
                           Integration with Embedded Systems:
+                          </span>
                           <li>
                             <span class="me-3">
                               <Icon icon="icon-park-outline:check-correct" />
@@ -765,7 +776,10 @@ export const Tabs = () => {
                           className="icon-list bullet-bg bullet-soft-primary two-columns"
                           style={{ listStyleType: "none" }}
                         >
+                                                    <span  style={{ color:'#008F58',fontWeight:'bold', fontSize:'1.25em'}}>
+
                           Input Device Support:
+                          </span>
                           <li>
                             <span class="me-3">
                               <Icon icon="icon-park-outline:check-correct" />
@@ -782,7 +796,10 @@ export const Tabs = () => {
                           className="icon-list bullet-bg bullet-soft-primary two-columns"
                           style={{ listStyleType: "none" }}
                         >
+                                                    <span  style={{ color:'#008F58',fontWeight:'bold', fontSize:'1.25em'}}>
+
                           Localization and Internationalization:
+                          </span>
                           <li>
                             <span class="me-3">
                               <Icon icon="icon-park-outline:check-correct" />
@@ -799,7 +816,10 @@ export const Tabs = () => {
                           className="icon-list bullet-bg bullet-soft-primary two-columns"
                           style={{ listStyleType: "none" }}
                         >
+                                                    <span  style={{ color:'#008F58',fontWeight:'bold', fontSize:'1.25em'}}>
+
                           Usability Testing and Optimization:
+                          </span>
                           <li>
                             <span class="me-3">
                               <Icon icon="icon-park-outline:check-correct" />
@@ -813,18 +833,20 @@ export const Tabs = () => {
                         </ul>
                       </div>
                       <div className="col-lg-6">
-                        <ul
-                          className="icon-list bullet-bg bullet-soft-primary two-columns"
-                          style={{ listStyleType: "none" }}
-                        >
-                          <h4>
+                      <p style={{ color:'#1268b3',fontWeight:'bold', fontSize:'1.25em'}}>
                             To provide embedded services in the HMI
                             (Human-Machine Interface) section, We use variety of
                             tools and technologies to develop, design, test, and
                             deploy HMI solutions for embedded systems. Here's a
                             breakdown of the essential tools and technologies:
-                          </h4>
+                          </p>
+                        <ul
+                          className="icon-list bullet-bg bullet-soft-primary two-columns"
+                          style={{ listStyleType: "none" }}
+                        >
+                         <span  style={{ color:'#008F58',fontWeight:'bold', fontSize:'1.25em'}}>
                           Integrated Development Environments (IDEs):
+                          </span>
                           <li>
                             <span class="me-3">
                               <Icon icon="icon-park-outline:check-correct" />
@@ -849,7 +871,9 @@ export const Tabs = () => {
                           className="icon-list bullet-bg bullet-soft-primary two-columns"
                           style={{ listStyleType: "none" }}
                         >
+                         <span  style={{ color:'#008F58',fontWeight:'bold', fontSize:'1.25em'}}>
                           Graphics Libraries and Frameworks:
+                          </span>
                           <li>
                             <span class="me-3">
                               <Icon icon="icon-park-outline:check-correct" />
@@ -874,7 +898,9 @@ export const Tabs = () => {
                           className="icon-list bullet-bg bullet-soft-primary two-columns"
                           style={{ listStyleType: "none" }}
                         >
+                          <span  style={{ color:'#008F58',fontWeight:'bold', fontSize:'1.25em'}}>
                           UI/UX Design Tools:
+                          </span>
                           <li>
                             <span class="me-3">
                               <Icon icon="icon-park-outline:check-correct" />
@@ -899,7 +925,9 @@ export const Tabs = () => {
                           className="icon-list bullet-bg bullet-soft-primary two-columns"
                           style={{ listStyleType: "none" }}
                         >
+                          <span  style={{ color:'#008F58',fontWeight:'bold', fontSize:'1.25em'}}>
                           Simulation and Emulation Tools:
+                          </span>
                           <li>
                             <span class="me-3">
                               <Icon icon="icon-park-outline:check-correct" />
@@ -918,7 +946,9 @@ export const Tabs = () => {
                           className="icon-list bullet-bg bullet-soft-primary two-columns"
                           style={{ listStyleType: "none" }}
                         >
+                          <span  style={{ color:'#008F58',fontWeight:'bold', fontSize:'1.25em'}}>
                           Prototyping Tools:
+                          </span>
                           <li>
                             <span class="me-3">
                               <Icon icon="icon-park-outline:check-correct" />
@@ -937,7 +967,9 @@ export const Tabs = () => {
                           className="icon-list bullet-bg bullet-soft-primary two-columns"
                           style={{ listStyleType: "none" }}
                         >
+                          <span  style={{ color:'#008F58',fontWeight:'bold', fontSize:'1.25em'}}>
                           Testing and Debugging Tools:
+                          </span>
                           <li>
                             <span class="me-3">
                               <Icon icon="icon-park-outline:check-correct" />
@@ -962,7 +994,9 @@ export const Tabs = () => {
                           className="icon-list bullet-bg bullet-soft-primary two-columns"
                           style={{ listStyleType: "none" }}
                         >
+                          <span  style={{ color:'#008F58',fontWeight:'bold', fontSize:'1.25em'}}>
                           Version Control Systems:
+                          </span>
                           <li>
                             <span class="me-3">
                               <Icon icon="icon-park-outline:check-correct" />
@@ -976,12 +1010,13 @@ export const Tabs = () => {
                             <span>SVN (Subversion)</span>
                           </li>
                         </ul>
-                        <h4>
+                        <p style={{ color:'#1268b3',fontWeight:'bold', fontSize:'1.25em'}}>
+
                           By leveraging these tools and technologies, we can
                           efficiently develop, design, test, and deploy HMI
                           solutions for embedded systems, meeting the needs and
                           expectations of your requirements.
-                        </h4>
+                        </p>
                       </div>
                     </div>
 
@@ -1052,14 +1087,461 @@ export const Tabs = () => {
                       </div>
                     </div> */}
                   </div>
+
+                  <div className="tab-pane fade" id="tab3-5">
+                  <div className="row gx-lg-8 gx-xl-12 gy-10 mb-5 mb-md-5">
+                    
+                      <div className="col-lg-6">
+                      <p style={{ color:'#1268b3',fontWeight:'bold', fontSize:'1.25em'}}>
+
+                          These basic connectivity services enable customers to leverage the full potential of embedded devices by facilitating communication, data exchange, and remote management, ultimately enhancing operational efficiency and driving innovation in diverse industries and applications.
+                          </p>
+                        <ul
+                          className="icon-list bullet-bg bullet-soft-primary two-columns"
+                          style={{ listStyleType: "none" }}
+                        >
+                                                    <span  style={{ color:'#008F58',fontWeight:'bold', fontSize:'1.25em'}}>
+
+                          Wireless Connectivity:
+                          </span>
+                          <li>
+                            <span class="me-3">
+                              <Icon icon="icon-park-outline:check-correct" />
+                            </span>
+                            <span>
+                            Enabling embedded devices to communicate wirelessly using protocols such as Wi-Fi, Bluetooth, Zigbee, or LoRa. This allows for flexible deployment and remote access to devices.
+                            </span>
+                          </li>
+                        </ul>
+                        <ul
+                          className="icon-list bullet-bg bullet-soft-primary two-columns"
+                          style={{ listStyleType: "none" }}
+                        >
+                                                    <span  style={{ color:'#008F58',fontWeight:'bold', fontSize:'1.25em'}}>
+
+                          Wired Connectivity: 
+                          </span>
+                          <li>
+                            <span class="me-3">
+                              <Icon icon="icon-park-outline:check-correct" />
+                            </span>
+                            <span>
+                            Supporting wired communication interfaces such as Ethernet, USB, or RS-232/485 for reliable and high-speed data exchange between embedded devices and external systems.
+                            </span>
+                          </li>
+                        </ul>
+
+                        <ul
+                          className="icon-list bullet-bg bullet-soft-primary two-columns"
+                          style={{ listStyleType: "none" }}
+                        >
+                                                    <span  style={{ color:'#008F58',fontWeight:'bold', fontSize:'1.25em'}}>
+
+                          IoT Integration:
+                          </span>
+                          <li>
+                            <span class="me-3">
+                              <Icon icon="icon-park-outline:check-correct" />
+                            </span>
+                            <span>
+                            Integrating embedded devices with Internet of Things (IoT) platforms to collect, analyze, and visualize data, enabling remote monitoring, control, and management of devices over the internet.
+                            </span>
+                          </li>
+                        </ul>
+
+                        <ul
+                          className="icon-list bullet-bg bullet-soft-primary two-columns"
+                          style={{ listStyleType: "none" }}
+                        >
+                                                    <span  style={{ color:'#008F58',fontWeight:'bold', fontSize:'1.25em'}}>
+
+                          Cloud Connectivity:
+                          </span>
+                          <li>
+                            <span class="me-3">
+                              <Icon icon="icon-park-outline:check-correct" />
+                            </span>
+                            <span>
+                            Providing seamless integration with cloud services such as AWS, Azure, or Google Cloud Platform for storing, processing, and accessing data from embedded devices over the internet.
+                            </span>
+                          </li>
+                        </ul>
+
+                        <ul
+                          className="icon-list bullet-bg bullet-soft-primary two-columns"
+                          style={{ listStyleType: "none" }}
+                        >
+                                                    <span  style={{ color:'#008F58',fontWeight:'bold', fontSize:'1.25em'}}>
+
+                          Remote Access and Control: 
+                          </span>
+                          <li>
+                            <span class="me-3">
+                              <Icon icon="icon-park-outline:check-correct" />
+                            </span>
+                            <span>
+                            Offering solutions for remotely accessing and controlling embedded devices using web-based interfaces or mobile apps, allowing users to monitor device status, configure settings, and perform diagnostics from anywhere.
+                            </span>
+                          </li>
+                        </ul>
+
+                        <ul
+                          className="icon-list bullet-bg bullet-soft-primary two-columns"
+                          style={{ listStyleType: "none" }}
+                        >
+                                                    <span  style={{ color:'#008F58',fontWeight:'bold', fontSize:'1.25em'}}>
+
+                          Data Exchange Protocols:
+                          </span>
+                          <li>
+                            <span class="me-3">
+                              <Icon icon="icon-park-outline:check-correct" />
+                            </span>
+                            <span>
+                            Supporting standard communication protocols such as MQTT, CoAP, HTTP, or OPC-UA for efficient and secure data exchange between embedded devices and external systems.
+                            </span>
+                          </li>
+                        </ul>
+
+                        <ul
+                          className="icon-list bullet-bg bullet-soft-primary two-columns"
+                          style={{ listStyleType: "none" }}
+                        >
+                                                    <span  style={{ color:'#008F58',fontWeight:'bold', fontSize:'1.25em'}}>
+
+                          Firmware Over-the-Air (OTA) Updates:
+                          </span>
+                          <li>
+                            <span class="me-3">
+                              <Icon icon="icon-park-outline:check-correct" />
+                            </span>
+                            <span>
+                            Implementing OTA update mechanisms to remotely update firmware and software on embedded devices, ensuring they stay up-to-date with the latest features, patches, and security fixes.
+                            </span>
+                          </li>
+                        </ul>
+
+                        <ul
+                          className="icon-list bullet-bg bullet-soft-primary two-columns"
+                          style={{ listStyleType: "none" }}
+                        >
+                                                    <span  style={{ color:'#008F58',fontWeight:'bold', fontSize:'1.25em'}}>
+
+                          Security Features: 
+                          </span>
+                          <li>
+                            <span class="me-3">
+                              <Icon icon="icon-park-outline:check-correct" />
+                            </span>
+                            <span>
+                            Incorporating security measures such as encryption, authentication, and access control to protect data transmitted between embedded devices and external systems, safeguarding against unauthorized access and data breaches.
+                            </span>
+                          </li>
+                        </ul>
+
+                        <ul
+                          className="icon-list bullet-bg bullet-soft-primary two-columns"
+                          style={{ listStyleType: "none" }}
+                        >
+                                                    <span  style={{ color:'#008F58',fontWeight:'bold', fontSize:'1.25em'}}>
+
+                          Scalability and Flexibility:
+                          </span>
+                          <li>
+                            <span class="me-3">
+                              <Icon icon="icon-park-outline:check-correct" />
+                            </span>
+                            <span>
+                            Providing solutions that are scalable and flexible to accommodate varying deployment scenarios and future expansion, allowing customers to adapt to changing requirements and environments.
+                            </span>
+                          </li>
+                        </ul>
+                      </div>
+                      <div className="col-lg-6">
+                      <p style={{ color:'#1268b3',fontWeight:'bold', fontSize:'1.25em'}}>
+
+To provide connectivity services in the embedded domain, we utilize a variety of tools and technologies to enable seamless communication, data exchange, and remote management of embedded devices. Here are some key tools and technologies used to deliver these services:
+</p>
+                        <ul
+                          className="icon-list bullet-bg bullet-soft-primary two-columns"
+                          style={{ listStyleType: "none" }}
+                        >
+                          <span  style={{ color:'#008F58',fontWeight:'bold', fontSize:'1.25em'}}>
+                          Embedded Networking Protocols:
+                          </span>
+                          <li>
+                            <span class="me-3">
+                              <Icon icon="icon-park-outline:check-correct" />
+                            </span>
+                            <span>MQTT (Message Queuing Telemetry Transport)</span>
+                          </li>
+                          <li>
+                            <span class="me-3">
+                              <Icon icon="icon-park-outline:check-correct" />
+                            </span>
+                            <span>CoAP (Constrained Application Protocol)</span>
+                          </li>
+                          <li>
+                            <span class="me-3">
+                              <Icon icon="icon-park-outline:check-correct" />
+                            </span>
+                            <span>HTTP/HTTPS</span>
+                          </li>
+                        </ul>
+
+                        <ul
+                          className="icon-list bullet-bg bullet-soft-primary two-columns"
+                          style={{ listStyleType: "none" }}
+                        >
+                          <span  style={{ color:'#008F58',fontWeight:'bold', fontSize:'1.25em'}}>
+                          IoT Platforms:
+                          </span>
+                          <li>
+                            <span class="me-3">
+                              <Icon icon="icon-park-outline:check-correct" />
+                            </span>
+                            <span>AWS IoT</span>
+                          </li>
+                          <li>
+                            <span class="me-3">
+                              <Icon icon="icon-park-outline:check-correct" />
+                            </span>
+                            <span>Azure IoT Hub</span>
+                          </li>
+                          <li>
+                            <span class="me-3">
+                              <Icon icon="icon-park-outline:check-correct" />
+                            </span>
+                            <span>Google Cloud IoT Core</span>
+                          </li>
+                        </ul>
+
+                        <ul
+                          className="icon-list bullet-bg bullet-soft-primary two-columns"
+                          style={{ listStyleType: "none" }}
+                        >
+                          <span  style={{ color:'#008F58',fontWeight:'bold', fontSize:'1.25em'}}>
+                         Cloud Services:
+                         </span>
+                          <li>
+                            <span class="me-3">
+                              <Icon icon="icon-park-outline:check-correct" />
+                            </span>
+                            <span>Amazon Web Services (AWS)</span>
+                          </li>
+                          <li>
+                            <span class="me-3">
+                              <Icon icon="icon-park-outline:check-correct" />
+                            </span>
+                            <span>Microsoft Azure</span>
+                          </li>
+                          <li>
+                            <span class="me-3">
+                              <Icon icon="icon-park-outline:check-correct" />
+                            </span>
+                            <span>Google Cloud Platform (GCP)</span>
+                          </li>
+                        </ul>
+
+                        <ul
+                          className="icon-list bullet-bg bullet-soft-primary two-columns"
+                          style={{ listStyleType: "none" }}
+                        >
+                          <span  style={{ color:'#008F58',fontWeight:'bold', fontSize:'1.25em'}}>
+                          Wireless Communication Technologies:
+                          </span>
+                          <li>
+                            <span class="me-3">
+                              <Icon icon="icon-park-outline:check-correct" />
+                            </span>
+                            <span>Wi-Fi</span>
+                          </li>
+                          <li>
+                            <span class="me-3">
+                              <Icon icon="icon-park-outline:check-correct" />
+                            </span>
+                            <span>Bluetooth</span>
+                          </li>
+                          <li>
+                            <span class="me-3">
+                              <Icon icon="icon-park-outline:check-correct" />
+                            </span>
+                            <span>Zigbee</span>
+                          </li>
+                          <li>
+                            <span class="me-3">
+                              <Icon icon="icon-park-outline:check-correct" />
+                            </span>
+                            <span>LoRaWAN</span>
+                          </li>
+                        </ul>
+
+                        <ul
+                          className="icon-list bullet-bg bullet-soft-primary two-columns"
+                          style={{ listStyleType: "none" }}
+                        >
+                          <span  style={{ color:'#008F58',fontWeight:'bold', fontSize:'1.25em'}}>
+                         Network Development Kits (NDKs):
+                         </span>
+                          <li>
+                            <span class="me-3">
+                              <Icon icon="icon-park-outline:check-correct" />
+                            </span>
+                            <span>lwIP (Lightweight IP)</span>
+                          </li>
+                          <li>
+                            <span class="me-3">
+                              <Icon icon="icon-park-outline:check-correct" />
+                            </span>
+                            <span>uIP</span>
+                          </li>
+                        </ul>
+
+                        <ul
+                          className="icon-list bullet-bg bullet-soft-primary two-columns"
+                          style={{ listStyleType: "none" }}
+                        >
+                          <span  style={{ color:'#008F58',fontWeight:'bold', fontSize:'1.25em'}}>
+                          Firmware Over-the-Air (OTA) Update Tools:
+                          </span>
+                          <li>
+                            <span class="me-3">
+                              <Icon icon="icon-park-outline:check-correct" />
+                            </span>
+                            <span>Mender</span>
+                          </li>
+                          <li>
+                            <span class="me-3">
+                              <Icon icon="icon-park-outline:check-correct" />
+                            </span>
+                            <span>AWS IoT Device Management</span>
+                          </li>
+                          
+                        </ul>
+
+                        <ul
+                          className="icon-list bullet-bg bullet-soft-primary two-columns"
+                          style={{ listStyleType: "none" }}
+                        >
+                          <span  style={{ color:'#008F58',fontWeight:'bold', fontSize:'1.25em'}}>
+                          Security Tools and Frameworks:
+                          </span>
+                          <li>
+                            <span class="me-3">
+                              <Icon icon="icon-park-outline:check-correct" />
+                            </span>
+                            <span>Transport Layer Security (TLS)</span>
+                          </li>
+                          <li>
+                            <span class="me-3">
+                              <Icon icon="icon-park-outline:check-correct" />
+                            </span>
+                            <span>OpenSSL</span>
+                          </li>
+                          <li>
+                            <span class="me-3">
+                              <Icon icon="icon-park-outline:check-correct" />
+                            </span>
+                            <span>Device Identity and Authentication</span>
+                          </li>
+                        </ul>
+                        <ul
+                          className="icon-list bullet-bg bullet-soft-primary two-columns"
+                          style={{ listStyleType: "none" }}
+                        >
+                          <span  style={{ color:'#008F58',fontWeight:'bold', fontSize:'1.25em'}}>
+                          Device Management Platforms:
+                          </span>
+                          <li>
+                            <span class="me-3">
+                              <Icon icon="icon-park-outline:check-correct" />
+                            </span>
+                            <span>DevicePilot</span>
+                          </li>
+                          <li>
+                            <span class="me-3">
+                              <Icon icon="icon-park-outline:check-correct" />
+                            </span>
+                            <span>Balena</span>
+                          </li>
+                        </ul>
+                        <ul
+                          className="icon-list bullet-bg bullet-soft-primary two-columns"
+                          style={{ listStyleType: "none" }}
+                        >
+                          <span  style={{ color:'#008F58',fontWeight:'bold', fontSize:'1.25em'}}>
+                          Remote Access and Control Tools:
+                          </span>
+                          <li>
+                            <span class="me-3">
+                              <Icon icon="icon-park-outline:check-correct" />
+                            </span>
+                            <span>TeamViewer</span>
+                          </li>
+                          <li>
+                            <span class="me-3">
+                              <Icon icon="icon-park-outline:check-correct" />
+                            </span>
+                            <span>AnyDesk</span>
+                          </li>
+                          
+                        </ul>
+                        <ul
+                          className="icon-list bullet-bg bullet-soft-primary two-columns"
+                          style={{ listStyleType: "none" }}
+                        >
+                          <span  style={{ color:'#008F58',fontWeight:'bold', fontSize:'1.25em'}}>
+                          Development and Testing Tools:
+                          </span>
+                          <li>
+                            <span class="me-3">
+                              <Icon icon="icon-park-outline:check-correct" />
+                            </span>
+                            <span>Eclipse IoT Projects</span>
+                          </li>
+                          <li>
+                            <span class="me-3">
+                              <Icon icon="icon-park-outline:check-correct" />
+                            </span>
+                            <span>PlatformIO</span>
+                          </li>
+                          <li>
+                            <span class="me-3">
+                              <Icon icon="icon-park-outline:check-correct" />
+                            </span>
+                            <span>Wireshark</span>
+                          </li>
+                        </ul>
+                        <p style={{ color:'#1268b3',fontWeight:'bold', fontSize:'1.25em'}}>
+
+                        By leveraging these tools and technologies, we can deliver robust connectivity services for embedded devices, enabling seamless communication, remote management, and integration with cloud and IoT platforms.
+                        </p>
+                      </div>
+                    </div>
+                    {/* <div className="row gx-lg-8 gx-xl-12 gy-10 mb-5 mb-md-5 align-items-center">
+                      <h4>
+                        Embedded artificial intelligence (AI) services integrate
+                        AI capabilities into embedded systems so devices can
+                        perform intelligent functions and make decisions locally
+                        (on device or on the EDGE). Our embedded experts can
+                        help you choose technologies that match your needs, help
+                        with problem analysis and execute technology scouting to
+                        unlock new possibilities for efficiency, automation and
+                        innovation as close to your data sources as you need.
+                      </h4>
+                      <EmbeddedAi />
+                    </div> */}
+                  </div>
+
+
                 </div>
                 <div className="tab-pane fade" id="tab3-6">
-                  <h4>
+                <p style={{ color:'#1268b3',fontWeight:'bold', fontSize:'1.55em'}}>
                     Our cross-functional teams leverage top-tier tools to craft
                     tailor-made solutions that not only provide enriching
                     experiences but also adhere to market regulations.
-                  </h4>
-                  <div className="row gx-lg-8 gx-xl-12 gy-10 mb-5 mb-md-5 align-items-center">
+                  </p>
+                  <div className="row gx-lg-8 gx-xl-12 gy-10 mb-5 mb-md-5">
                     <div className="col-lg-3">
                       <button className="btn btn-primary" style={{width:'100%', height:'auto'}} onClick={onShowClick1}>
                         {" "}

@@ -54,8 +54,8 @@ export const SkewedDiv = () => {
                   inView2 ? "animate__animated animate__fadeInLeft" : ""
                 }`}
               >
-                <h4> Our Comprehensive list of Embedded System Services for various industry verticals and horizontals include</h4>
-                <ul class="icon-list bullet-bg bullet-soft-primary fw-bold" style={{color:"black", fontSize:"1.1em", listStyle:"none", textTransform: "capitalize"}}>
+                 <p style={{ color:'#1268b3',fontWeight:'bold', fontSize:'1.55em'}}> Our Comprehensive list of Embedded System Services for various industry verticals and horizontals include</p>
+                <ul class="icon-list bullet-bg bullet-soft-primary fw-bold" style={{color:"#008F58", fontSize:"1.1em", listStyle:"none", textTransform: "capitalize"}}>
                   <li>
                   <Icon icon="flat-color-icons:ok" />
                     Concept to production turnkey product engineering
@@ -88,9 +88,9 @@ export const SkewedDiv = () => {
                   inView3 ? "animate__animated animate__fadeInRight" : ""
                 }`}
               >
-                <h4>Below, a few examples of the embedded development services we have offered to clients worldwide</h4>
+                <p style={{ color:'#1268b3',fontWeight:'bold', fontSize:'1.55em'}}>Below, a few examples of the embedded development services we have offered to clients worldwide</p>
 
-                <ul class="icon-list bullet-bg bullet-soft-primary fw-bold" style={{color:"black", fontSize:"1.1em", listStyle:"none",   textTransform: "capitalize"}}>
+                <ul class="icon-list bullet-bg bullet-soft-primary fw-bold" style={{color:"#008F58", fontSize:"1.1em", listStyle:"none",   textTransform: "capitalize"}}>
                   <li>
                   <Icon icon="flat-color-icons:ok" />
                     Loop powered design and development

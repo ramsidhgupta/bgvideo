@@ -1,5 +1,4 @@
 import React, { useRef } from "react";
-
 import "./EmbeddedAi.css";
 import { Player } from "@lottiefiles/react-lottie-player";
 import circuit from "./lottieFiles/circuit.json";

@@ -65,6 +65,8 @@
 .headerCard:hover,
 .paragraphCard:hover {
   color: white;
+  font-weight: 700;
+  
 }
 
 #particles canvas {

@@ -1,6 +1,5 @@
 import React from "react";
 import "./BannerEmbedded.css";
-import backimage from "./assets/backImage.jpg";
 
 export const BannerEmbedded = () => {
   return (
@@ -12,16 +11,14 @@ export const BannerEmbedded = () => {
         >
           <div class="content-title-outer">
             <div class="content-title ">
-              <h2
-                class="text-left c-font-bold "
-                style={{
+            <h3 className="card-title textDecor text-center mb-5 mt-3" style={{
                   paddingBottom: "20px",
                   marginBottom: "10px",
                   color: "#ffffff",
-                }}
-              >
+                }}>
+             
                 Benefit From Our Services
-              </h2>
+              </h3>
             </div>
           </div>
           <div class="row-banner">

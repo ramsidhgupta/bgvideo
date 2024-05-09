@@ -1,6 +1,5 @@
 import React, {useState} from "react";
-import { useInView } from "react-intersection-observer";
-import bgvideo from "./assets/bgvideo.mp4";
+
 import sports from "./assets/sports.mp4";
 import automotive from "./assets/automotive.mp4";
 import healthcare from "./assets/healthcare.mp4";
@@ -23,41 +22,15 @@ export const ManyDivs = () => {
     setIsHovered(false);
   };
 
-  // useEffect(() => {
-  //   document.querySelectorAll(".card").forEach((card) => {
-  //     const video = card.querySelector(".card-video");
-
-  //     card.addEventListener("mouseenter", () => {
-  //       video.play(); // Play the video when the card is hovered
-  //     });
-
-  //     card.addEventListener("mouseleave", () => {
-  //       video.pause(); // Pause the video when the mouse leaves the card
-  //       video.currentTime = 0; // Reset the video to the beginning
-  //     });
-  //   });
-
-  //   // Clean up event listeners when the component unmounts
-  //   return () => {
-  //     document.querySelectorAll(".card").forEach((card) => {
-  //       const video = card.querySelector(".card-video");
-  //       card.removeEventListener("mouseenter", () => {
-  //         video.play();
-  //       });
-  //       card.removeEventListener("mouseleave", () => {
-  //         video.pause();
-  //         video.currentTime = 0;
-  //       });
-  //     });
-  //   };
-  // }, []); // Empty dependency array ensures this effect runs only once after the component mounts
-
+  
 
   return (
     <>
       <section className="wrapper">
         <div className="container-fluid pt-md-8 pt-8 pt-md-0">
           <div className="center-div">
+          <h3 className="card-title textDecor text-center mb-5 mt-3">INDUSTRY FOCUS</h3>
+            <p classname="text-center" style={{color:"#008F58", fontWeight:'600', fontSize:'1.25em'}}>Techsoc offers an array of secure, intelligent, scalable solutions inform of accelerators, platforms and tools which can be diversely used across multiple industries. These span across areas of product design, hardware design, firmware development, and validation and certification.</p>
             <div className="row">
               <div className="col-lg-6 col-12 bg-info">
                 <div className="row">
@@ -79,10 +52,10 @@ export const ManyDivs = () => {
                         <div className="overlayMainVideo"></div>
                       </div>
                       <div className="card-body d-flex flex-column justify-content-center">
-                        <h5 className="card-title textDecor">
+                        <h5 className="card-title textDecor" style={{color:"#008F58", fontWeight:'600', fontSize:'1.25em'}}>
                           Consumer Electronics
                         </h5>
-                        <p className="card-text">
+                        <p className="card-text" style={{fontWeight:'600', fontSize:'1.25em'}}>
                           From wearables and IoT devices to smart homes and
                           advanced security systems—we foster end-user
                           experience with solutions built with the latest
@@ -112,10 +85,10 @@ export const ManyDivs = () => {
                         <div className="overlayMainVideo"></div>
                       </div>
                       <div className="card-body d-flex flex-column justify-content-center">
-                        <h5 className="card-title textDecor">
+                        <h5 className="card-title textDecor" style={{color:"#008F58", fontWeight:'600', fontSize:'1.25em'}}>
                           Industrial Manufacturing
                         </h5>
-                        <p className="card-text">
+                        <p className="card-text" style={{fontWeight:'600', fontSize:'1.25em'}}>
                           Our embedded software development services help
                           businesses win big. We can improve your daily routine
                           with improved asset tracking and power control. If you
@@ -125,14 +98,14 @@ export const ManyDivs = () => {
                         </p>
                       </div>
                     </div>
-                    {/* <p>Just For Demo</p> */}
+                   
                   </div>
                 </div>
               </div>
               <div className="col-lg-6 col-12 bg-info">
                 <div className="row">
                   <div className="col-12 bg-success bottom-first-div d-flex align-items-stretch p-0">
-                    {/* <p>Just For Demo</p> */}
+                  
                     <div className="card position-relative w-100 m-0 cardRadius" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
                       <div className="card-video-overlay position-absolute">
                       {isHovered && (
@@ -149,8 +122,8 @@ export const ManyDivs = () => {
                         <div className="overlayMainVideo"></div>
                       </div>
                       <div className="card-body d-flex flex-column justify-content-center">
-                        <h5 className="card-title textDecor">Healthcare</h5>
-                        <p className="card-text">
+                        <h5 className="card-title textDecor" style={{color:"#008F58", fontWeight:'600', fontSize:'1.25em'}}>Healthcare</h5>
+                        <p className="card-text" style={{fontWeight:'600', fontSize:'1.25em'}}>
                           Techsoc provides full-cycle embedded systems
                           development services for healthcare institutions as
                           well as companies that produce healthcare equipment.
@@ -165,7 +138,7 @@ export const ManyDivs = () => {
                 </div>
                 <div className="row">
                   <div className="col-md-6 col-12 bottom-sec-div bg-danger d-flex align-items-stretch p-0">
-                    {/* <p>Just For Demo</p> */}
+                  
                     <div className="card position-relative w-100 m-0 cardRadius" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
                       <div className="card-video-overlay position-absolute">
                       {isHovered && (
@@ -182,8 +155,8 @@ export const ManyDivs = () => {
                         <div className="overlaySmallVideo"></div>
                       </div>
                       <div className="card-body d-flex flex-column justify-content-center">
-                        <h5 className="card-title textDecor">Automotive</h5>
-                        <p className="card-text">
+                        <h5 className="card-title textDecor" style={{color:"#008F58", fontWeight:'600', fontSize:'1.25em'}}>Automotive</h5>
+                        <p className="card-text" style={{fontWeight:'600', fontSize:'1.25em'}}>
                           Our team provides full-cycle embedded development for
                           automotive embedded systems. We build in-vehicle
                           solutions like HMIs, system and ADAS controllers, and
@@ -212,8 +185,8 @@ export const ManyDivs = () => {
                         <div className="overlaySmallVideo"></div>
                       </div>
                       <div className="card-body d-flex flex-column justify-content-center">
-                        <h5 className="card-title textDecor">Sports</h5>
-                        <p className="card-text">
+                        <h5 className="card-title textDecor" style={{color:"#008F58", fontWeight:'600', fontSize:'1.25em'}}>Sports</h5>
+                        <p className="card-text" style={{fontWeight:'600', fontSize:'1.25em'}}>
                           We work on solutions that improve
                           training and prevent injury, including projects for
                           professional sports, fitness, and rehabilitation. To
@@ -246,10 +219,10 @@ export const ManyDivs = () => {
                     <div className="overlaySmallVideo"></div>
                   </div>
                   <div className="card-body d-flex flex-column justify-content-center">
-                    <h5 className="card-title textDecor">
+                    <h5 className="card-title textDecor" style={{color:"#008F58", fontWeight:'600', fontSize:'1.25em'}}>
                       Media & Entertainment
                     </h5>
-                    <p className="card-text">
+                    <p className="card-text" style={{fontWeight:'600', fontSize:'1.25em'}}>
                       As part of our embedded solutions development services, we
                       craft media players, media processing and streaming tools,
                       software for content compression and protection, and media
